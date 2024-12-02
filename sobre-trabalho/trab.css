@@ -46,14 +46,28 @@ section {
 
 .lista ul {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0;
-  margin: 0;
+  flex-direction: column; /* Para empilhar os itens verticalmente */
+  gap: 1rem; /* Espaço entre os itens */
   list-style-type: none;
+  padding: 0;
 }
 
-.lista li {
+.membro {
+  display: flex;
+  align-items: center; /* Alinha imagem e texto verticalmente */
+  gap: 1rem; /* Espaço entre a imagem e o texto */
+}
+
+.membro img {
+  border-radius: 8px; /* Bordas arredondadas */
+  width: 150px; /* Tamanho fixo para manter consistência */
+}
+
+.membro p {
+  margin: 0;
+}
+
+/* .lista li {
   margin: 0;
   padding: 0;
   text-align: right;
@@ -61,9 +75,9 @@ section {
 }
 
 .lista img {
-  margin-right: auto; /* Empurra a imagem para a extrema esquerda */
+  margin-right: auto; 
   display: block;
-}
+} */
 
 
 li > img{
