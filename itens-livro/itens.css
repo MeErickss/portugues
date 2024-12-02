@@ -1,0 +1,30 @@
+.livro {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.banner {
+  text-align: center;
+  padding: 2rem;
+}
+
+.banner img {
+  max-width: 100%;
+  height: auto;
+}
+
+.sinopse {
+  padding: 5% 20% 20% 0%;
+  font-size: x-large;
+}
+
+section {
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+footer{
+  text-align: center;
+}
+  
