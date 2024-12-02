@@ -38,6 +38,19 @@ header nav a:hover {
   grid-template-columns: 40% 60%;
 }
 
+.itens-livro{
+  background-image: linear-gradient(to right, #1a1a1a, #2d2d2d, #404040, #555555);
+  border-radius: 10px;
+  margin-top: 2vh;
+}
+
+.itens-livro > button {
+  border: transparent;
+  background-color: transparent;
+  color: #e0e0e0;
+  font-size: medium;
+}
+
 .banner {
   text-align: center;
   padding: 2rem;
