@@ -1,4 +1,6 @@
 /* styles.css */
+
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -34,7 +36,7 @@ header nav a:hover {
 }
 
 section {
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 8px;
   margin-bottom: 1rem;
   font-size: x-large;
@@ -44,40 +46,34 @@ section {
   text-align: center;
 }
 
-.lista ul {
+.content {
   display: flex;
-  flex-direction: column; /* Para empilhar os itens verticalmente */
-  gap: 1rem; /* Espaço entre os itens */
-  list-style-type: none;
-  padding: 0;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: left;
+  align-items: center;
 }
 
 .membro {
-  display: flex;
-  align-items: center; /* Alinha imagem e texto verticalmente */
-  gap: 1rem; /* Espaço entre a imagem e o texto */
+  display: flex; /* Organiza imagem e texto lado a lado */
+  margin-bottom: 20px; /* Espaçamento entre os blocos */
+  border-radius: 10px; /* Bordas arredondadas */
+
 }
 
 .membro img {
-  border-radius: 8px; /* Bordas arredondadas */
-  width: 200px; /* Tamanho fixo para manter consistência */
+  max-width: 150px; /* Define o tamanho máximo da imagem */
+  height: auto; /* Mantém a proporção */
+  border-radius: 50%; /* Torna a imagem circular */
+  border: 3px solid #555; /* Adiciona borda */
+  margin-right: 20px; /* Espaçamento entre imagem e texto */
 }
 
 .membro p {
-  margin: 0;
+  margin: 0; /* Remove espaçamentos adicionais */
+  line-height: 1.6; /* Ajusta espaçamento entre as linhas */
+  color: #e0e0e0; /* Mantém o texto claro */
 }
-
-/* .lista li {
-  margin: 0;
-  padding: 0;
-  text-align: right;
-  flex-grow: 1;
-}
-
-.lista img {
-  margin-right: auto; 
-  display: block;
-} */
 
 
 li > img{
@@ -86,6 +82,11 @@ li > img{
 
 footer{
   text-align: center;
+}
+
+button.active {
+  color: #004fa3;
+  font-weight: bold;
 }
   
 
