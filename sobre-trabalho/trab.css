@@ -60,7 +60,7 @@ section {
 
 .membro img {
   border-radius: 8px; /* Bordas arredondadas */
-  width: 150px; /* Tamanho fixo para manter consistência */
+  width: 200px; /* Tamanho fixo para manter consistência */
 }
 
 .membro p {
