@@ -5,7 +5,7 @@ body {
   margin: 0;
   padding: 0;
   background-image: linear-gradient(to right top, #020202, #1a1a1a, #2d2d2d, #404040, #555555);
-  color: #e0e0e0; /* Texto claro */
+  color: #e0e0e0; 
 }
 
 .capa {
@@ -51,7 +51,7 @@ header nav a:hover {
 .itens-livro > button {
   border-left: 1px solid white;
   border-right: 1px solid white;
-  padding-inline: 10px;
+  padding-inline: 20px;
   border-top: 0;
   border-bottom: 0;
   background-color: transparent;
@@ -79,9 +79,10 @@ button.active {
   height: auto;
 }
 
-.sinopse {
+.sinopse, .content{
   padding: 5% 20% 20% 0%;
   font-size: x-large;
+  
 }
 
 section {
