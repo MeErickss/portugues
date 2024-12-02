@@ -7,22 +7,21 @@ window.onscroll = () => {
 
 scrollTopButton.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
-// Dark/Light Mode
-const themeToggle = document.querySelector(".theme-toggle");
-const body = document.body;
-
-themeToggle.addEventListener("click", () => {
-  const currentTheme = body.getAttribute("data-theme");
-  body.setAttribute("data-theme", currentTheme === "dark" ? "light" : "dark");
-});
 
 function loadContent(url) {
   const mainElement = document.querySelector('main[data-main]');
+  const buttons = document.querySelectorAll('nav button');
 
-  // Mostra uma mensagem de carregamento enquanto busca o conteúdo
   mainElement.innerHTML = "<p>Carregando...</p>";
 
-  // Busca o conteúdo do arquivo HTML especificado
+  buttons.forEach(button => {
+    if (button.getAttribute('onclick').includes(url)) {
+      button.classList.add('active');
+    } else {
+      button.classList.remove('active');
+    }
+  });
+
   fetch(url)
     .then(response => {
       if (!response.ok) {
@@ -31,7 +30,7 @@ function loadContent(url) {
       return response.text();
     })
     .then(html => {
-      mainElement.innerHTML = html; // Substitui o conteúdo de <main>
+      mainElement.innerHTML = html;
     })
     .catch(error => {
       mainElement.innerHTML = `<p style="color: red;">Erro: ${error.message}</p>`;
