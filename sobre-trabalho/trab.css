@@ -58,7 +58,6 @@ section {
   display: flex; /* Organiza imagem e texto lado a lado */
   margin-bottom: 20px; /* Espaçamento entre os blocos */
   border-radius: 10px; /* Bordas arredondadas */
-
 }
 
 .membro img {
