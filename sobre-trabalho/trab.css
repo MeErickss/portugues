@@ -38,23 +38,13 @@ section {
   padding: 2rem;
   border-radius: 8px;
   margin-bottom: 1rem;
+  font-size: x-large;
 }
 
 footer{
   text-align: center;
 }
   
-  /* Tema */
-
-  body[data-theme="dark"] {
-  background-color: #020202;
-  color: #e0e0e0;
-}
-
-body[data-theme="light"] {
-  background-color: #f4f4f4;
-  color: #333;
-}
 
 /* Botão Voltar ao Topo */
 #scrollTop {
@@ -74,27 +64,7 @@ body[data-theme="light"] {
   background: #555;
 }
 
-/* Botão Tema */
-.theme-toggle {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background: transparent;
-  color: inherit;
-  border: none;
-  font-size: 1.2rem;
-  cursor: pointer;
-}
 
-body[data-theme="dark"] {
-    background-color: #020202;
-    color: #e0e0e0;
-}
-
-body[data-theme="light"] {
-  background-color: #f4f4f4;
-  color: #333;
-}
 
 /* Botão Voltar ao Topo */
 #scrollTop {
@@ -112,16 +82,4 @@ body[data-theme="light"] {
 
 #scrollTop:hover {
   background: #555;
-}
-
-/* Botão Tema */
-.theme-toggle {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background: transparent;
-  color: inherit;
-  border: none;
-  font-size: 1.2rem;
-  cursor: pointer;
 }
