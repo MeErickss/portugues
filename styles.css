@@ -56,7 +56,7 @@ header nav a:hover {
   border-bottom: 0;
   background-color: transparent;
   color: #e0e0e0;
-  font-size: medium;
+  font-size: 18px;
 }
 
 .itens-livro > button:hover {
@@ -92,17 +92,6 @@ section {
 
 footer{
   text-align: center;
-}
-
-/* Tema */
-body[data-theme="dark"] {
-  background-color: #020202;
-  color: #e0e0e0;
-}
-
-body[data-theme="light"] {
-  background-color: #f4f4f4;
-  color: #333;
 }
 
 /* Botão Voltar ao Topo */

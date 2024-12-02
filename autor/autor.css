@@ -24,13 +24,13 @@ header {
 }
 
 header nav a {
-  color: #bbb; /* Links com tom claro */
+  color: #bbb;
   margin: 0 15px;
   text-decoration: none;
 }
 
 header nav a:hover {
-  color: #fff; /* Links em destaque ao passar o mouse */
+  color: #fff;
 }
 
 .capa-livros {
@@ -42,53 +42,43 @@ footer{
   text-align: center;
 }
 .carrossel {
-  position: relative;
-  max-width: 90%;
-  margin: 2rem auto;
-  overflow: hidden;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+  padding: 1rem;
 }
 
 .carrossel-wrapper {
   display: flex;
-  scroll-behavior: smooth;
-  overflow-x: scroll;
+  flex-grow: 1;
 }
 
 .carrossel-items {
   display: flex;
-  gap: 20px;
+  gap: 1rem;
+  flex-grow: 2;
 }
 
 .livro {
-  flex: 0 0 auto;
-  width: 200px;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  background: #1f1f1f;
+  scroll-snap-align: center;
+}
+
+.capa-livros {
+  max-width: 100%;
+  height: auto;
   border-radius: 8px;
-  padding: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.livro img {
-  width: 100%;
-  border-radius: 4px;
-}
-
-.nav-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #333;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  z-index: 1;
-  opacity: 0.7;
-}
-
-.nav-btn:hover {
-  opacity: 1;
+.livro:hover{
+  box-shadow: #353434 5px 5px 50px;
+  flex-grow: 4;
 }
 
 .prev {
@@ -99,7 +89,6 @@ footer{
   right: 0;
 }
 
-
 .autor{
   display: flex;
   flex-wrap: wrap;
@@ -109,14 +98,8 @@ footer{
 
 }
 
-body[data-theme="dark"] {
-  background-color: #020202;
-  color: #e0e0e0;
-}
-
-body[data-theme="light"] {
-  background-color: #f4f4f4;
-  color: #333;
+.autor p{
+  padding: 3% 10% 0% 10%;
 }
 
 /* Botão Voltar ao Topo */
