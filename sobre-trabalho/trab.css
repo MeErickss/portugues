@@ -33,12 +33,41 @@ header nav a:hover {
   color: #fff; /* Links em destaque ao passar o mouse */
 }
 
-
 section {
   padding: 2rem;
   border-radius: 8px;
   margin-bottom: 1rem;
   font-size: x-large;
+}
+
+.utf {
+  text-align: center;
+}
+
+.lista ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.lista li {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  flex-grow: 1;
+}
+
+.lista img {
+  margin-right: auto; /* Empurra a imagem para a extrema esquerda */
+  display: block;
+}
+
+
+li > img{
+  border-radius: 10px;
 }
 
 footer{

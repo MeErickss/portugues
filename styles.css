@@ -5,7 +5,7 @@ body {
   margin: 0;
   padding: 0;
   background-image: linear-gradient(to right top, #020202, #1a1a1a, #2d2d2d, #404040, #555555);
-  color: #e0e0e0; /* Texto claro */
+  color: #e0e0e0;
 }
 
 .capa {
@@ -24,13 +24,13 @@ header {
 }
 
 header nav a {
-  color: #bbb; /* Links com tom claro */
+  color: #bbb;
   margin: 0 15px;
   text-decoration: none;
 }
 
 header nav a:hover {
-  color: #fff; /* Links em destaque ao passar o mouse */
+  color: #fff;
 }
 
 .livro {
@@ -76,10 +76,39 @@ button.active {
   height: auto;
 }
 
-.sinopse {
+.sinopse, .content {
   padding: 5% 20% 20% 0%;
   font-size: x-large;
 }
+
+.content {
+  margin: auto;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 1rem;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 8px;
+}
+
+.content::-webkit-scrollbar {
+  width: 10px;
+}
+
+.content::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 8px;
+}
+
+.content::-webkit-scrollbar-thumb {
+  background: #2d2d2d;
+  border-radius: 8px;
+}
+
+.content::-webkit-scrollbar-thumb:hover {
+  background: #005fa3;
+}
+
 
 section {
   padding: 2rem;
@@ -91,7 +120,6 @@ footer{
   text-align: center;
 }
 
-/* Botão Voltar ao Topo */
 #scrollTop {
   position: fixed;
   bottom: 20px;
